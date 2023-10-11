@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid blue;
+    flex-direction: column;
+  }
+  
+  .phone-number {
+    font-weight: bold; /* Optionally style the phone number */
+    margin: 1px 0 5px; /* Adjust the margin between the phone number and h1 */
+  }
+  
+  h1, .business-info {
+    margin: 1px 0; /* Adjust the margin for h1 and .business-info */
+  }
+  

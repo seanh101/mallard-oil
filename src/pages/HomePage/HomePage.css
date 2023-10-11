@@ -1,0 +1,63 @@
+/* HomePage.css */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    
+  }
+  
+  .map {
+    border: 2px solid blue;
+    border-radius: 10px;
+    max-width: 250px;
+    margin-top: 50px;
+  }
+
+  .mallard {
+    width: 250px; /* Adjust the width as needed */
+    height: 150px; /* Set the height less than width to make it oval */
+    border: 10px solid white; /* Add a thick white border */
+    border-radius: 50%; /* Makes the image oval */
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+  }
+  
+.bioheat {
+  border: 2px solid blue;
+  border-radius: 10px;
+  display: flex;
+  text-align: justify;
+  flex-direction: column; /* To make elements stack vertically */
+}
+
+.bioheat > * {
+  margin: 10px; /* Adjust the margin as needed */
+}
+
+.location {
+  border: 2px solid blue;
+  border-radius: 10px;
+  max-height: 250px;
+  max-width: 250px;
+  margin-top: 50px;
+}
+
+.maps {
+  display: flex;
+
+}
+
+.maps > * {
+  margin: 20px; /* Adjust the margin as needed */
+}
+
+
