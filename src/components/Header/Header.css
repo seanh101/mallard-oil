@@ -2,16 +2,27 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid blue;
+    border-bottom: 2px solid gold;
     flex-direction: column;
+    background-color: green;
   }
   
   .phone-number {
     font-weight: bold; /* Optionally style the phone number */
-    margin: 1px 0 5px; /* Adjust the margin between the phone number and h1 */
+    margin: 1px 0; /* Adjust the margin between the phone number and h1 */
   }
   
   h1, .business-info {
     margin: 1px 0; /* Adjust the margin for h1 and .business-info */
   }
   
+ .company {
+  font-size: 24px;
+ }
+
+ .motto {
+  font-family: 'Arvo', serif;
+  font-size: 18px;
+  color: gold;
+  
+}

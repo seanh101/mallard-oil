@@ -1,5 +1,5 @@
 /* HomePage.css */
-.container {
+.inner-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,8 +9,8 @@
     
     margin: 0 auto;
     padding: 24px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 200px;
+    margin-right: 200px;
     box-sizing: border-box;
     
   }
@@ -25,7 +25,7 @@
   .mallard {
     width: 250px; /* Adjust the width as needed */
     height: 150px; /* Set the height less than width to make it oval */
-    border: 10px solid white; /* Add a thick white border */
+    border: 10px solid gold; /* Add a thick white border */
     border-radius: 50%; /* Makes the image oval */
     display: block;
     margin: 0 auto; /* Center the image horizontally */
@@ -35,7 +35,10 @@
   border: 2px solid blue;
   border-radius: 10px;
   display: flex;
+  border: 4px solid gold;
+  background-color: green;
   text-align: justify;
+  font-size: 24px;
   flex-direction: column; /* To make elements stack vertically */
 }
 
@@ -56,6 +59,59 @@
 .maps > * {
   margin: 20px;
   object-fit: contain; /* Adjust the margin as needed */
+  height: 250px;
+}
+
+.description {
+  border: 4px solid gold;
+  border-radius: 10px;
+  font-size: 24px;
+  display: flex;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  background-color: green;
+  flex-direction: column; /* To make elements stack vertically */
 }
 
 
+
+.bioheat p:before {
+  content: attr(data-before);
+  color: blue;
+}
+
+.truck {
+  margin-bottom: 20px;
+  border: 4px gold solid;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .inner-container {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+  }
+  
+  .map, .location {
+    max-width: 100%;
+  }
+  
+  .mallard, .truck {
+    max-width: 100%;
+    height: auto; /* Preserve the image aspect ratio */
+  }
+}
+
+/* For screens less than or equal to 480px (common breakpoint for mobile phones) */
+@media (max-width: 480px) {
+  .description, .bioheat {
+    font-size: 18px; /* Slightly reduce the font size for better readability */
+  }
+
+  .maps iframe {
+    width: 100%;
+    height: auto; /* adjust the height based on the iframe content */
+  }
+}
