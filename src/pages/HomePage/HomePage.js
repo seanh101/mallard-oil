@@ -6,6 +6,9 @@ import mallard from './mallard.jpg'
 import OilTruck from './oil-truck.jpg'
 
 function HomePage() {
+    const towns = "Hingham, Weymouth, Quincy, Braintree, Norwell, Cohasset, Hull";
+    const tickerText = towns + " - " + towns;
+
     return (
 <div className='container'>
         <Header />
@@ -36,6 +39,11 @@ function HomePage() {
    <img className='map' src={Map} alt='map'></img>
    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2954.8848522262024!2d-70.9119671!3d42.216905600000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e363d41400d2e7%3A0x680fbdc5489382e3!2s16%20French%20St%2C%20Hingham%2C%20MA%2002043!5e0!3m2!1sen!2sus!4v1697046657180!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title='location' className='location'></iframe>
    </div>
+   <div className="ticker">
+                <div className="ticker-content">
+                    {tickerText}
+                </div>
+            </div>
         </div>
         </div>
     );
