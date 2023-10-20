@@ -21,8 +21,9 @@
  }
 
  .motto {
-  font-family: 'Kanit', sans-serif;
+  font-family: 'Arvo', serif;
   font-size: 18px;
   color: gold;
-  
+  font-style: italic;  /* Make the text italic */
+  font-weight: bold;   /* Make the text bold */
 }
