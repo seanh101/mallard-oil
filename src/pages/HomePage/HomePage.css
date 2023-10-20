@@ -94,9 +94,7 @@
     padding: 10px;
   }
   
-  .map, .location {
-    max-width: 100%;
-  }
+
   
   .mallard, .truck {
     max-width: 100%;
@@ -108,10 +106,5 @@
 @media (max-width: 480px) {
   .description, .bioheat {
     font-size: 18px; /* Slightly reduce the font size for better readability */
-  }
-
-  .maps iframe {
-    width: 100%;
-    height: auto; /* adjust the height based on the iframe content */
   }
 }

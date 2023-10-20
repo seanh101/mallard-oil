@@ -15,7 +15,9 @@ function HomePage() {
         <div className='description'>
         <p>Welcome to Mallard Oil – Your Trusted Source for Reliable Heating Oil Services in the South Shore, Massachusetts!</p> 
         <h4>Proudly serving the South Shore for over 40 years!</h4>
-        <p>With over four decades of dedicated service to our community, Mallard Oil has been the go-to provider for all your heating oil needs. Our commitment to warmth and comfort is backed by years of experience, ensuring that your home stays cozy during even the coldest New England winters.</p>  
+        <p>With over four decades of dedicated service to our community, Mallard Oil has been the go-to provider for all your heating oil needs. </p>
+            
+        <p>Our commitment to warmth and comfort is backed by years of experience, ensuring that your home stays cozy during even the coldest New England winters.</p>  
             
         <p>At Mallard Oil, we don't just deliver oil; we deliver peace of mind. Join our long-standing tradition of excellence, and experience the warmth that comes with choosing Mallard Oil.</p>
         </div>
