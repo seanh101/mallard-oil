@@ -2,18 +2,25 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+color: white;
     flex-direction: column;
-    background-color: #00A86B;
+    background-color: #2c3e50;
   }
   
   .phone-number {
     font-weight: bold; /* Optionally style the phone number */
     margin: 1px 0; /* Adjust the margin between the phone number and h1 */
+    color: rgb(188, 185, 185);
   }
   
-  h1, .business-info {
-    margin: 1px 0; /* Adjust the margin for h1 and .business-info */
+  h1 {
+    margin: 1px 0; 
+    color: white;
+  }
+
+  .business-info {
+    margin: 1px 0; 
+    color: rgb(188, 185, 185);
   }
   
  .company {
@@ -23,7 +30,7 @@
  .motto {
   font-family: 'Arvo', serif;
   font-size: 18px;
-  color: gold;
+  color: white;
   font-style: italic;  /* Make the text italic */
   font-weight: bold;   /* Make the text bold */
 }

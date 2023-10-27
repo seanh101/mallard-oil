@@ -1,19 +1,42 @@
-// HomePage.js
-import React from 'react'
-import './HomePage.css'
-import Header from '../../components/Header/Header'
-import Map from './SSC-map.png'
+import React, { useState, useEffect } from 'react';
+import './HomePage.css';
+import Header from '../../components/Header/Header';
+import Map from './SSC-map.png';
+import truck from './oil-truck.jpg';
+import snow1 from './snow1.jpeg';
+import snow2 from './snow2.jpeg';
 
 function HomePage() {
-  
+    const images = [truck, snow1, snow2];
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const [fadeIn, setFadeIn] = useState(true);
+
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+            setFadeIn(true);
+        }, 6000); // 6 seconds
+
+        return () => clearInterval(timer);
+    }, [currentImageIndex, images.length]);
+
+    useEffect(() => {
+        const fadeTimer = setTimeout(() => {
+            setFadeIn(false);
+        }, 3000); // 3 seconds (half of 6 seconds)
+
+        return () => clearTimeout(fadeTimer);
+    }, [fadeIn]);
 
     return (
         <div className='container'>
             <Header />
             <div className='inner-container'>
-                
+                <section className='truck'>
+                    <img src={images[currentImageIndex]} alt='truck' className={fadeIn ? 'oil-truck fade-in' : 'oil-truck'} />
+                </section>
                 <section className='description'>
-                    <h1>Welcome to Mallard Oil</h1>
+                    <h1 id='welcome'>#1 Local Heating Oil Supplier</h1>
                     <p>With over four decades of service, Mallard Oil has been the go-to provider for all your heating oil needs. Our commitment ensures your home stays warm during the cold New England winters. Experience the warmth with Mallard Oil.</p>
                 </section>
                 
@@ -37,8 +60,6 @@ function HomePage() {
                         className='location'
                     ></iframe>
                 </section>
-
-           
             </div>
 
             <footer>
