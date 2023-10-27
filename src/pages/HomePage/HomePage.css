@@ -100,3 +100,44 @@ footer {
   padding: 20px 0;
   font-family: Verdana, sans-serif;
 }
+
+.truck {
+  height: 400px; /* Adjust based on your needs */
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+/* ... Existing styles ... */
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;  /* Spacing between the text and the icon */
+  padding: 20px 0;
+}
+
+.contact h2 {
+  margin: 0;  /* Remove default margins to better align with icon */
+}
+
+.contact a {
+  display: inline-block;
+  font-size: 1.5rem; /* Adjust the size of the mail icon */
+  text-decoration: none;  /* Remove underline from the link */
+  color: #2c3e50;  /* Color of the mail icon */
+  transition: color 0.3s ease;  /* Transition effect for hover state */
+}
+
+.contact a:hover {
+  color: #333;  /* Slightly change color on hover */
+}
+

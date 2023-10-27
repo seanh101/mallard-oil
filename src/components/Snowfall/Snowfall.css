@@ -1,0 +1,28 @@
+@keyframes fall {
+    to {
+      transform: translateY(100vh);
+    }
+  }
+  
+  .snowflake {
+    position: absolute;
+    top: -10%;
+    width: 1em;
+    height: 1em;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0.7;
+    animation: fall var(--animation-time, 5s) linear infinite;
+    will-change: transform;
+  }
+  
+  /* Optional: Add a slight variation to some snowflakes */
+  .snowflake:nth-child(5n) {
+    width: 0.5em;
+    height: 0.5em;
+    opacity: 0.5;
+    --animation-time: 7s;
+  }
+  
+  
+  
