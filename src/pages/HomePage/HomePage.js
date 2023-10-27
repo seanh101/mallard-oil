@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './HomePage.css';
-import Header from '../../components/Header/Header';
+
 import Snowfall from '../../components/Snowfall/Snowfall';
 import Map from './SSC-map.png';
 import truck from './oil-truck.jpg';
@@ -29,9 +29,10 @@ function HomePage() {
 
     return (
         <div className='container'>
-            <Header />
-            <Snowfall />
+            
+            
             <div className='inner-container'>
+            <Snowfall />
                 <section className={`truck ${currentImageClass}`} style={{backgroundImage: `url(${images[currentIndex]})`}}>
                     {/* Content can be placed here if needed, but for now, it's empty */}
                 </section>
@@ -52,7 +53,7 @@ function HomePage() {
                 <section className='maps'>
                     <img src={Map} alt='map' className='map'/>
                     <iframe 
-                        src="https://www.google.com/maps/embed?pb=..." 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2954.8848522262024!2d-70.9119671!3d42.216905600000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e363d41400d2e7%3A0x680fbdc5489382e3!2s16%20French%20St%2C%20Hingham%2C%20MA%2002043!5e0!3m2!1sen!2sus!4v1698370995424!5m2!1sen!2sus" 
                         width="600" 
                         height="450" 
                         loading="lazy" 
@@ -69,12 +70,12 @@ function HomePage() {
                 </section>
             </div>
 
-            <footer>
-                <p>Mallard Oil &copy; 2023 | All Rights Reserved</p>
-            </footer>
+          
         </div>
     );
 }
 
 export default HomePage;
+
+
 

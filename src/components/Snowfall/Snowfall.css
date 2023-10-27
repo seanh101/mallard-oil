@@ -6,7 +6,8 @@
   
   .snowflake {
     position: absolute;
-    top: -10%;
+    top: -5vh;
+
     width: 1em;
     height: 1em;
     background-color: white;

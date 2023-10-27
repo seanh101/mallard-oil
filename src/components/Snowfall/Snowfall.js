@@ -12,7 +12,9 @@ const Snowfall = () => {
     for (let i = 0; i < 100; i++) {
       const snowflake = document.createElement('div');
       snowflake.className = 'snowflake';
-      snowflake.style.left = `${Math.random() * 100}vw`;
+      const position = Math.random() > 0.5 ? Math.random() * 15 : 85 + Math.random() * 15;
+snowflake.style.left = `${position}vw`;
+
       snowflake.style.animationDelay = `${Math.random() * 5}s`;
       root.appendChild(snowflake);
     }
