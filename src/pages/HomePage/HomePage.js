@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import './HomePage.css';
-
 import Snowfall from '../../components/Snowfall/Snowfall';
 import Map from './SSC-map.png';
 import truck from './oil-truck.jpg';
