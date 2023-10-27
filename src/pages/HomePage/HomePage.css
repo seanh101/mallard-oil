@@ -1,10 +1,16 @@
 /* HomePage.css */
 
+/* Base styles */
 body {
   font-family: Verdana, sans-serif;
   line-height: 1.6;
   color: #333;
   background-color: #f5f5f5;
+}
+
+h1, h2, h3, h4 {
+  font-family: Georgia, serif;
+  color: #2c3e50;
 }
 
 .container {
@@ -23,11 +29,7 @@ header, section {
   padding: 20px 0;
 }
 
-h1, h2, h3, h4 {
-  font-family: Georgia, serif;
-  color: #2c3e50;
-}
-
+/* Description and Bioheat sections */
 .description, .bioheat {
   background-color: #f9f9f9;
   padding: 20px;
@@ -40,12 +42,24 @@ h1, h2, h3, h4 {
   text-align: center;
 }
 
+.bioheat {
+  font-size: 18px;
+  color: #4B4B4B;
+  line-height: 28px;
+  padding: 15px 25px;
+}
+
 .bioheat p span {
   display: inline-block;
   width: 30px;
   text-align: center;
 }
 
+#welcome {
+  color: black;
+}
+
+/* Map section */
 .maps {
   display: flex;
   align-items: center;
@@ -60,12 +74,16 @@ h1, h2, h3, h4 {
   border: 2px solid blue;
   border-radius: 10px;
   height: 250px;
-  width:250px;
+  width: 250px;
 }
 
-.oil-truck {
-  display: block;
-  margin: 0 auto !important;
+/* Image transition styles */
+.truck, .oil-truck {
+  height: 400px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   opacity: 0;
   transition: opacity 2s;
 }
@@ -74,10 +92,32 @@ h1, h2, h3, h4 {
   opacity: 1;
 }
 
-#welcome {
-  color: black;
+/* Contact section */
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px 0;
 }
 
+.contact h2 {
+  margin: 0;
+}
+
+.contact a {
+  display: inline-block;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #2c3e50;
+  transition: color 0.3s ease;
+}
+
+.contact a:hover {
+  color: #333;
+}
+
+/* Responsive styles */
 @media (max-width: 768px) {
   .inner-container {
       padding: 10px;
@@ -93,51 +133,10 @@ h1, h2, h3, h4 {
   }
 }
 
+/* Footer styles */
 footer {
   background-color: #2c3e50;
   color: white;
   text-align: center;
   padding: 20px 0;
-  font-family: Verdana, sans-serif;
 }
-
-.truck {
-  height: 400px; /* Adjust based on your needs */
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0;
-  transition: opacity 2s;
-}
-
-.fade-in {
-  opacity: 1;
-}
-
-/* ... Existing styles ... */
-
-.contact {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;  /* Spacing between the text and the icon */
-  padding: 20px 0;
-}
-
-.contact h2 {
-  margin: 0;  /* Remove default margins to better align with icon */
-}
-
-.contact a {
-  display: inline-block;
-  font-size: 1.5rem; /* Adjust the size of the mail icon */
-  text-decoration: none;  /* Remove underline from the link */
-  color: #2c3e50;  /* Color of the mail icon */
-  transition: color 0.3s ease;  /* Transition effect for hover state */
-}
-
-.contact a:hover {
-  color: #333;  /* Slightly change color on hover */
-}
-

@@ -43,9 +43,20 @@ function HomePage() {
                 
                 <section className='bioheat'>
                     <h2>Introducing Eco-friendly Bio-Heat</h2>
-                    <p><span role="img" aria-label="leaf">🍃</span> Environmentally Friendly: A cleaner and greener alternative to traditional heating oil. It's derived from renewable resources.</p>
-                    <p><span role="img" aria-label="fire">🔥</span> An Easy Switch: Compatible with existing heating systems.</p>
-                    <p><span role="img" aria-label="money-bag">💰</span> Cost-Effective: Cost-effective, guaranteeing warmth and comfort without breaking the bank.</p>
+                    <div className="bioheat-features">
+                        <div className="feature">
+                            <i className="icon leaf-icon"></i> {/* Placeholder for your icon */}
+                            <p>Environmentally Friendly: A cleaner and greener alternative to traditional heating oil. Derived from renewable resources.</p>
+                        </div>
+                        <div className="feature">
+                            <i className="icon fire-icon"></i> {/* Placeholder for your icon */}
+                            <p>An Easy Switch: Compatible with existing heating systems.</p>
+                        </div>
+                        <div className="feature">
+                            <i className="icon money-icon"></i> {/* Placeholder for your icon */}
+                            <p>Cost-Effective: Guaranteeing warmth and comfort without breaking the bank.</p>
+                        </div>
+                    </div>
                     <p>Contact us today to switch!</p>
                 </section>
                 
